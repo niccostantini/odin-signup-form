@@ -27,7 +27,6 @@ input:invalid {
     border-color:brown;
 }
 
-
 input:focus {
     border: 2px solid rgb(128, 208, 239);
     box-shadow: 3px 3px rgb(255, 177, 251);
@@ -44,93 +43,23 @@ body {
 
 }
 
-/*
-*   RIGHT DIV
-**/
-
-.right {
-    font-family: "Aveny T WEB", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: url(./maemubg.jpg) no-repeat center;
-    background-position: 50% 50%;
-    height: 100vh;
-    width: 40%;
-}
-
 a {
     text-decoration: none;
     font-weight:  700;
     color: var(--magenta);
 }
 
-/*
-*   LOGO DIV
-**/
-
-.logo {
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 14em;
-    background-color: rgba(235, 174, 174, 0.396);
-} 
-
-#image {
-
-    height: 96px;
-    width: 60px;
-}   
-
-#logotext {
-    padding-top: 11px;
-    font-size: 70px;
-    color: white;
-    line-height: 1.2;
-}
-
-.credits {
-    margin-bottom: 2em;
-    text-align: center;
-    color: white;
-}
-
-/*
-*   LEFT DIV
-**/
-
 .left {
 
     background-color: rgb(255, 224, 237);
-
     padding-top: 5em;
+    padding-right: 3em;
+    padding-left: 3em;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;;
-    width: 60%;
-}
-
-.pinkbg, .theform {
-    padding-left: 35px;
-}
-
-
-.top {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-    gap: 10px;
-}
-
-.bottom {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    gap: 10px;
+    width: 100%;
 }
 
 button {
@@ -158,22 +87,6 @@ button:active {
     color: white;
 }
 
-
-.catchphrase {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.theform {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 45px;
-    background-color: rgb(255, 242, 247);
-    box-shadow:  0px 5px 5px rgba(223, 58, 143, 0.431)
-}
-
 .field {
     display: flex;
     flex-direction: column;
@@ -186,14 +99,125 @@ label {
     letter-spacing: 1px;
 }
 
-.formRow {
-    margin-top:20px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.right {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;;
 }
 
-.already {
-    position: absolute;
-    top: 42em;
+@media only screen and (min-width: 700px)
+{
+
+    /*
+    *   RIGHT DIV
+    **/
+
+    .right {
+        font-family: "Aveny T WEB", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(./maemubg.jpg) no-repeat center;
+        background-position: 50% 50%;
+        visibility: visible;
+        height: 100vh;
+        width: 40%;
+    }
+
+    /*
+    *   LOGO DIV
+    **/
+
+    .logo {
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 14em;
+        background-color: rgba(235, 174, 174, 0.396);
+    } 
+
+    #image {
+
+        height: 96px;
+        width: 60px;
+    }   
+
+    #logotext {
+        padding-top: 11px;
+        font-size: 70px;
+        color: white;
+        line-height: 1.2;
+    }
+
+    .credits {
+        margin-bottom: 2em;
+        text-align: center;
+        color: white;
+    }
+
+    /*
+    *   LEFT DIV
+    **/
+
+    .left {
+
+        background-color: rgb(255, 224, 237);
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;;
+        width: 60%;
+    }
+
+    .pinkbg, .theform {
+        padding-left: 35px;
+    }
+
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 10px;
+    }
+
+
+    .catchphrase {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .theform {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 45px;
+        background-color: rgb(255, 242, 247);
+        box-shadow:  0px 5px 5px rgba(223, 58, 143, 0.431)
+    }
+
+ 
+
+    .formRow {
+        margin-top:20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .already {
+        position: absolute;
+        top: 42em;
+    }
 }
