@@ -1,0 +1,374 @@
+@font-face{
+    font-family: "Aveny T WEB";
+    src: url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.eot");
+    src: url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.svg#Aveny T WEB")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+:root {
+    --magenta: rgb(223, 58, 143);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+    border: 1.5px solid rgb(239, 128, 185);
+    border-radius: 3px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:invalid {
+        border-color:brown;
+    border-color:brown;
+}
+
+input:focus {
+    border: 2px solid rgb(128, 208, 239);
+    box-shadow: 3px 3px rgb(255, 177, 251);
+}
+
+button {
+    width: 150px;
+    padding: 10px 0;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    border: 1px solid var(--magenta);
+    border-radius: 3px;
+    box-shadow: 0px 4px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.431);
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0px 4px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.564);
+    color: white;
+}
+
+button:active {
+    margin-top: 2px;
+    box-shadow: 0px 2px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.564);
+    color: white;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color:rgb(144, 122, 146);
+    font-weight: 550;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.right {
+    /* font-family: "Aveny T WEB", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%; */
+
+    background: url(./maemubg.jpg) no-repeat center;
+    background-size: 100%;
+
+    /* padding-top: 5em;
+    padding-bottom: 1em; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight:  700;
+    color: var(--magenta);
+}
+
+   body {
+    display: flex;
+    flex-direction: column;
+   }
+   
+    .right {
+        padding-top: 5em;
+        padding-bottom: 1em;
+    }
+
+
+.logo {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(235, 174, 174, 0.396);
+} 
+
+#image {
+    height: 96px;
+    width: 60px;
+}   
+
+#logotext {
+    padding-top: 11px;
+    font-size: 70px;
+    color: white;
+    line-height: 1.2;
+}
+
+.credits {
+    margin-top: 2em;
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    padding: 0;
+    margin: 24px 0 0 0;
+} 
+
+.left {
+    background-color: rgb(255, 224, 237);
+    padding-top: calc(8vh + 0.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.theform {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc(6vw + 0.5rem) calc(4vh + 0.5rem) calc(6vw + 0.5rem);
+    background-color: rgb(255, 242, 247);
+    box-shadow:  0px 5px 5px rgba(223, 58, 143, 0.431)
+}
+
+
+
+.catchphrase {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+
+/************************//************************/
+/************************//************************/
+/************************//************************/
+
+.formRow {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.catchphrase {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    gap: 10px;
+    margin-bottom: 3em;
+}
+
+
+@media only screen and (min-width: 700px)
+{
+
+    /*
+    *   RIGHT DIV
+    **/
+    body {
+        display: flex;
+        flex-direction: row;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 100%;
+    }
+
+    
+
+    .right {
+        font-family: "Aveny T WEB", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(./maemubg.jpg) no-repeat center;
+        background-position: 50% 50%;
+        height: 100vh;
+        width: 40%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /*
+    *   LOGO DIV
+    **/
+
+    .logo {
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 14em;
+        background-color: rgba(235, 174, 174, 0.396);
+    } 
+
+    #image {
+
+        height: 96px;
+        width: 60px;
+    }   
+
+    #logotext {
+        padding-top: 11px;
+        font-size: 70px;
+        color: white;
+        line-height: 1.2;
+    }
+
+    .credits {
+        margin-bottom: 2em;
+        text-align: center;
+        color: white;
+    }
+
+    /*
+    *   LEFT DIV
+    **/
+
+    .left {
+
+        background-color: rgb(255, 224, 237);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        padding-top: 0;
+    }
+
+    .pinkbg {
+        padding-left: 35px;
+    }
+
+    .theform {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 45px 35px;
+        background-color: rgb(255, 242, 247);
+        box-shadow: 0px 5px 5px rgba(223, 58, 143, 0.431);
+        width: 100%;
+        align-items: center;
+        align-items: flex-start;
+    }
+
+        /* padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+        width: 60%; */
+    
+
+    .pinkbg, .theform {
+        padding-left: 35px;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 10px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .catchphrase {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+    .theform {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 45px;
+        background-color: rgb(255, 242, 247);
+        box-shadow:  0px 5px 5px rgba(223, 58, 143, 0.431)
+    }
+
+ 
+
+    .formRow {
+        margin-top:20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .already {
+        padding-top: 10px;
+    }
+
+}

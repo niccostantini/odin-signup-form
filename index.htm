@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-up Form</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="right">
+    <div class="logo">
+        <img id="image" src="./odin-lined.png">
+        <span id="logotext">ODIN</span>
+    </div>
+    <div class="credits">Photo by <a href="https://unsplash.com/@picoftasty">Mae Mu</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+</div>
+
+<div class="left">
+    <div class="top pinkbg">
+        <div class="catchphrase">Pink is soft.<br>
+                                Purple is elegant.<br>
+                                Magenta is catchy.<br>
+                                Don't be afraid of pink</div>
+        <div class="catchphrase">Come and embrace pink and its nuances</div>
+    </div>
+
+    <div class="theform">
+        <h3>Let's do this!</h3>
+        <form id="signup" name="signup" target="" method="get">
+<div class="formRow">
+    <div class="field"><label for="name">NAME</label> <input id="name" type="text"></div>
+    <div class="field"><label for="lastname">LAST NAME</label><input id="lastname" type="text"></div>
+</div>
+
+<div class="formRow">
+    <div class="field"><label for="email">EMAIL</label><input id="email" type="email" placeholder="your@email.pm"></div>
+    <div class="field"><label for="tel">PHONE NUMBER</label><input id="tel" type="tel" placeholder="1234567890">
+    </div>
+</div>
+
+<div class="formRow">
+    <div class="field"><label>CONFIRM PASSWORD</label><input id="pswdCheck" type="password" placeholder="Type your password"></div>
+    <div class="field"><label>PASSWORD</label><input id="pswd" type="password" placeholder="Confirm your password">    </div>
+</div>
+        </form>
+        
+
+    </div>
+    <div class="bottom pinkbg">
+        <button form="signup" id="submit">Yalla</button>
+        <div class="already">Already embraced? <a href="#">Get moving!</a></div>
+    </div>
+</div>
+</body>
+</html>
