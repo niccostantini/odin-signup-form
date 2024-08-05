@@ -1,0 +1,191 @@
+@font-face{
+    font-family: "Aveny T WEB";
+    src: url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.eot");
+    src: url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/6cdc4cc6b38c8e89e8721abe8aed4ab9.svg#Aveny T WEB")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+:root {
+    --magenta: rgb(223, 58, 143);
+}
+
+input {
+    border: 1px solid rgb(239, 128, 185);
+    border-radius: 3px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    padding: 0;
+    margin: 24px 0 0 0;
+} 
+
+body {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/*
+*   RIGHT DIV
+**/
+
+.right {
+    font-family: "Aveny T WEB", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(./maemubg.jpg) no-repeat center;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+    font-weight:  700;
+    color: var(--magenta);
+}
+
+/*
+*   LOGO DIV
+**/
+
+.logo {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14em;
+    background-color: rgba(235, 174, 174, 0.396);
+} 
+
+#image {
+
+    height: 96px;
+    width: 60px;
+}   
+
+#logotext {
+    padding-top: 11px;
+    font-size: 70px;
+    color: white;
+    line-height: 1.2;
+}
+
+.credits {
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+
+/*
+*   LEFT DIV
+**/
+
+.left {
+
+    background-color: rgb(255, 224, 237);
+
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;;
+    width: 60%;
+}
+
+.pinkbg, .theform {
+    padding-left: 35px;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+button {
+    width: 150px;
+    padding: 10px 0;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    border: 1px solid var(--magenta);
+    border-radius: 3px;
+    box-shadow: 0px 4px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.431);
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0px 4px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.564);
+    color: white;
+}
+
+button:active {
+    margin-top: 2px;
+    box-shadow: 0px 2px var(--magenta);
+    background-color: rgba(223, 58, 143, 0.564);
+    color: white;
+}
+
+input:invalid {
+    border-color:brown;
+}
+
+.catchphrase {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.theform {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+    background-color: rgb(255, 242, 247);
+    box-shadow:  0px 5px 5px rgba(223, 58, 143, 0.431)
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color:rgb(144, 122, 146);
+    font-weight: 550;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.formRow {
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.already {
+    position: absolute;
+    top: 42em;
+}
