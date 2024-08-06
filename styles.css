@@ -50,6 +50,7 @@ button {
     box-shadow: 0px 4px var(--magenta);
     background-color: rgba(223, 58, 143, 0.431);
     color: white;
+    transition: all 0.1s;
 }
 
 button:hover {
@@ -59,7 +60,7 @@ button:hover {
 }
 
 button:active {
-    margin-top: 2px;
+    transform: translateY(2px);
     box-shadow: 0px 2px var(--magenta);
     background-color: rgba(223, 58, 143, 0.564);
     color: white;
